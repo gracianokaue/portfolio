@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
+    color: #FFF;
 }
 
 body{
@@ -54,7 +55,7 @@ nav{
 
 .desktop-tablet a{
     text-decoration: none;
-    color: #FFF;
+    
 }
 
 .menu:hover{
@@ -81,7 +82,35 @@ nav{
 
 .quote{
     width: 80%;
-    font-size: 24px;
-    color: #FFF;
+    font-size: 22px;
     text-align: justify;
+}
+
+main{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.projects-title{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.project-item{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    background-color: aqua;
 }

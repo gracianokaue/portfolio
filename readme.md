@@ -1,1 +1,1 @@
-Projeto de portifólio versão 0.1, desenvolvido por Kauê Graciano, 2023.
+Projeto de portifólio versão 0.3, desenvolvido por Kauê Graciano, 2023.
