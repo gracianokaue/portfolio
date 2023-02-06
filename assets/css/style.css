@@ -53,34 +53,26 @@ nav{
     display: flex;
 }
 
-.desktop-tablet{
-    width: 480px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.desktop-tablet a{
-    text-decoration: none;
-    
-}
-
-.menu:hover{
-    border-bottom: 1px solid #FFF;
+.menu-container{
+    height: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .banner{
     width: 100%;
     height: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 25px;
 }
 
 .author-picture{
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
     background-image: url(../img/author.png);
     background-size: cover;
     border: 2px solid #FFF;
@@ -88,6 +80,7 @@ nav{
 
 .quote{
     width: 80%;
+    margin-left: 25px;
     font-size: 22px;
     text-align: justify;
 }
@@ -138,15 +131,15 @@ main{
 }
 
 #project1{
-    background-image: url(../img/realestate.png);
+    background-image: url(../img/emCartaz.png);
 }
 
 #project2{
-    background-image: url(../img/medicenter.png);
+    background-image: url(../img/realestate.png);
 }
 
 #project3{
-    background-image: url(../img/realestate.png);
+    background-image: url(../img/medicenter.png);
 }
 
 .technologies{
