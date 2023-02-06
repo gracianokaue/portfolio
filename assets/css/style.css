@@ -86,7 +86,7 @@ nav{
 }
 
 main{
-    margin-top: 60px;
+    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -97,10 +97,10 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
-.projects-title{
+.projects-title, .techs-title{
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
@@ -143,11 +143,20 @@ main{
 }
 
 .technologies{
-    margin-top: 50px;
-    margin-bottom: 50px;
     width: 100%;
-    height: 300px;
-    background-color: aqua;
+    height: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.techs-title{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.techItem{
+    padding: 25px;
 }
 
 .container-footer{
