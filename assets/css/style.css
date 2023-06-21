@@ -16,7 +16,7 @@
 
 body{
     background-color: #000;
-    max-width: 1366px;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -47,6 +47,97 @@ header{
     background-image: url(../img/logo.png);
     background-size: cover;
     
+}
+
+.hamb-menu{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+.menu-faketrigger{
+
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.menu-faketrigger:checked ~.menu-lines span{
+
+    background-color: #000000;
+
+}
+
+.menu-lines{
+
+    position: absolute;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+
+}
+
+.menu-lines span{
+
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 7px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    transition: all ease .2s;
+
+}
+
+.hamb-menu ul{
+
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: -5px;
+    width: 250px;
+    height: 230px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    margin-left: 60px;
+    border-radius: 10px;
+    list-style: none;
+    transition: all ease .2s;
+
+}
+
+
+.menu-faketrigger:checked ~ul{
+
+    margin-left: -215px;
+
+}
+
+.hamb-menu ul li{
+
+    padding: 10px 30px;
+
+
+}
+
+.hamb-menu ul li a{
+
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.hamb-menu ul li a:hover{
+
+    border-bottom: #000000 2px solid;
+
 }
 
 nav{
@@ -82,7 +173,7 @@ nav{
     border-radius: 60px;
     background-image: url(../img/author.png);
     background-size: cover;
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
 }
 
 .quote{
