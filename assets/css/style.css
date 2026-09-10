@@ -20,7 +20,6 @@
 
 body{
     background-color: var(--color-background);
-    width: 100vw;
     display: flex;
     justify-content: center;
     font-family: var(--font-primary);
@@ -35,7 +34,7 @@ a{
 .container{
     
     width: 80%;
-    height: 500px;
+    max-width: 1200px;
 
 }
 
