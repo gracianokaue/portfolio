@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
-    color: #FFF;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
 }
@@ -14,11 +12,24 @@
     display: none; 
   }
 
+:root {
+    --color-background: #000;
+    --color-text: #FFF;
+    --font-primary: 'Inconsolata', monospace;
+}
+
 body{
-    background-color: #000;
+    background-color: var(--color-background);
     width: 100vw;
     display: flex;
     justify-content: center;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .container{
@@ -204,7 +215,7 @@ main{
     transform: scale(1.15);
 }
 
-.projects-title, .techs-title{
+h2{
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
@@ -222,7 +233,7 @@ main{
     cursor: pointer;
 }
 
-.project-item legend{
+.project-item h3{
     width: 100%;
     height: 83px;
     display: flex;
@@ -255,7 +266,7 @@ main{
     justify-content: center;
 }
 
-.techs-title{
+#techs-title{
     margin-top: 50px;
     margin-bottom: 25px;
 }
@@ -305,7 +316,7 @@ main{
         text-align: center;
     }
 
-    .projects-title{
+    h2{
         margin-top: 15px;
     }
     
