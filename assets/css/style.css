@@ -52,10 +52,9 @@ header{
 }
 
 .logo{
-    width: 300px;
-    height: 250px;
-    background-image: url(../img/logo.png);
-    background-size: cover;
+    display: block;
+    width: min(300px, 85vw);
+    height: auto;
     
 }
 
@@ -308,6 +307,13 @@ h2{
 
 @media (max-width: 906px){
     
+    .logo{
+    width: 270px;
+    height: 225px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    }
+    
     .quote{
         margin-top: 40px;
         text-align: center;
@@ -320,6 +326,13 @@ h2{
 }
 
 @media (max-width: 799px){
+    
+    .logo{
+    width: 255px;
+    height: 213px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    }
     
     #project2{
         margin-top: 40px;
