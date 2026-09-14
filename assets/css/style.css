@@ -175,12 +175,13 @@ nav{
 }
 
 .author-picture{
-    flex: 0 0 220px;
+    flex: 0 0 260px;
 }
 
 .author-picture img{
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 4/5;
     object-fit: cover;
     object-position: center top;
@@ -200,8 +201,14 @@ nav{
 }
 
 .presentation-text{
-    font-size: 1.25rem;
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    text-indent: 1.5rem;
+}
+
+.presentation-text + .presentation-text {
+    margin-top: 1rem;
 }
 
 main{
@@ -376,12 +383,13 @@ h2{
     }
 
     .presentation-text {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         line-height: 1.5;
+        text-indent: 0;
     }
 
     .technologies {
         justify-content: center;
     }
-    
+
 }
