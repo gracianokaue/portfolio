@@ -269,25 +269,30 @@ h2{
 }
 
 .technologies{
-    width: 100%;
-    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
 }
 
-#techs-title{
-    margin-top: 50px;
-    margin-bottom: 25px;
+.tech-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #333;
+    border-radius: 999px;
 }
 
-.techItem{
-    padding: 25px;
+.tech-item img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
-.techItem :hover{
-    transition: all ease 250ms;
-    transform: translateY(-25px);
+
+.tech-item span{
+    font-size: 1rem;
 }
 
 .container-footer{
@@ -374,4 +379,9 @@ h2{
         font-size: 1.1rem;
         line-height: 1.5;
     }
+
+    .technologies {
+        justify-content: center;
+    }
+    
 }
