@@ -168,26 +168,40 @@ nav{
 .banner{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .author-picture{
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    background-image: url(../img/author.png);
-    background-size: cover;
-    border: 1px solid #FFF;
+    flex: 0 0 220px;
 }
 
-.quote{
-    width: 80%;
-    margin-left: 25px;
-    font-size: 22px;
-    text-align: justify;
+.author-picture img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 16px;
+}
+
+.presentation{
+    flex: 1;
+    max-width: 650px;
+}
+
+.presentation-label{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.presentation-text{
+    font-size: 1.25rem;
+    line-height: 1.6;
 }
 
 main{
@@ -338,4 +352,26 @@ h2{
         margin-top: 40px;
     }
     
+}
+
+@media (max-width: 700px) {
+    .banner {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .author-picture {
+        flex-basis: auto;
+        width: 190px;
+    }
+
+    .presentation {
+        width: 100%;
+    }
+
+    .presentation-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
 }
