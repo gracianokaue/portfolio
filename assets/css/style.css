@@ -227,10 +227,10 @@ main{
     margin-top: 30px;
 }
 
-.projects a :hover {
+/*.projects a :hover {
     transition: all ease 250ms;
     transform: scale(1.15);
-}
+}*/
 
 h2{
     font-size: 22px;
@@ -256,23 +256,24 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #333;
     opacity: 0.8;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 
 }
 
 #project1{
-    background-image: url(../img/emCartaz.png);
+    background-image: url(../img/controle-financeiro.png);
 }
 
 #project2{
-    background-image: url(../img/realestate.png);
+    background-image: url(../img/catalogo-investimentos.png);
 }
 
 #project3{
-    display: none;
+    background-image: url(../img/realestate.png);
+    
 }
 
 .technologies{
